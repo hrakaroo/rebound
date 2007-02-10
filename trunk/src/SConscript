@@ -1,0 +1,18 @@
+# SCons build file for Rebound
+
+import os
+
+env = Environment()
+env.Import('env')
+
+# Get a listing of all cpp files in the src dir
+cpp = []
+for file in os.listdir("../src"):
+    if file.endswith(".cpp"):
+        cpp.append(file)
+
+
+rebound = env.Program(target    = 'rebound',
+                      source    = cpp)
+
+Return("rebound")
