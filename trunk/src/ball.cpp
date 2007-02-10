@@ -57,6 +57,7 @@ namespace rebound {
   }
 }
 
+
 // Ostream stringify for a ball
 std::ostream& operator<<(std::ostream& os, const rebound::Ball& ball)
 {
