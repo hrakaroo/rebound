@@ -1,0 +1,337 @@
+
+title = "Rebound Basic Levels"
+
+level = {
+    title  = "Introduction"
+    author = "Unknown"
+    image  = andromeda_gendler.png
+    board  = { 
+                DD________BBBB________DD
+                WW______WWBGBGWW______WW
+                ______GGBGBGBGBGGG______
+                __PBGGBCBCBCBCBCBCGGPC__
+                __WWBLBL________BLBLWW__
+	 	__________GGGG__________
+	 	__________GGGG__________
+                __WWBLBL________BLBLWW__
+                __PGGGBGBGBGBGBGBGGGPO__
+                ______GGBCBCBCBCGG______
+                WW______WWBGBGWW______WW
+                DD________BOBO________DD
+	}
+}
+
+
+level = {
+    title  = "Keys & Locks"
+    author = "Joshua Gerth"
+    image  = leonid06_heden.png
+    board  = { 
+                __WWGGGGGGGGGGGGGGGGWW__
+                __WWWWWWWWWWWWWWWWLRWW__
+                __WWGGGGGGGGGGGGGGGGWW__
+                __WWLGWWWWWWWWWWWWWWWW__
+	 	__WWGGGGGGGGGGGGGGGGWW__
+	 	__WWWWWWWWWWWWWWWWLCWW__
+	        __WWGGGGGGGGGGGGGGGGWW__
+	        __WWLOWWWWWWWWWWWWWWWW__
+                ________________________
+                ________________________
+                ________________________
+                ____PRKRPGKGPCKCPOKO____
+	}
+}
+
+
+level = {
+    title  = "Devil in the Details"
+    author = "Joshua Gerth"
+    image  = ngc6745.png
+    board  = { 
+	        DD____________________DD
+	        WW__BCBCBC____BRBRBR__WW
+	        ____BCDDBC____BRDDBR____
+	        ____BCGGBC____BRPCBR____
+	        ____BCBCBC____BRBRBR____
+	        ________________________
+	        ________________________
+	        ____BOBOBO____BLBLBL____
+	        ____BODDBO____BLDDBL____
+	        ____BOPRBO____BLPOBL____
+	        WW__BOBOBO____BLBLBL__WW
+		DD____________________DD
+	}
+}
+
+
+level = {
+    title  = "Green Death"
+    author = "Tobin Zerba"
+    image  = catseye_hst.png
+    board  = {
+              KCWWDDWWDDWWDDWWDDGGGGBG
+              ____________________WWBG
+              ____________________WWBG
+              WWDDBODDBODDBODDWWGGWWPG
+              BOBCBOBCBOBCBOBCBOBCWWLC
+              GGGGGGGGGGGGGGGGGGGGPO__
+              GGBOBCBOBCBOBCBOBCWWWW__
+              GGDDGGDDGGDDGGDDGGDDWW__
+              GGBOBCBOBCBOBCBOBCBOGG__
+              GGGGGGGGGGGGGGGGGGGGGG__
+              BOBCBOBCBOBCBOBCBOBCPC__
+              DDWWDDWWDDWWDDWWDDGGWWWW
+      }
+}
+
+
+level = {
+    title  = "How Fast Are You?"
+    author = "Quentin Crain"
+    image  = m51.png
+    board  = {
+              PGBR__________________GG
+              BRGG__PR__PGBRBGWWBGPR__
+              DD__BGDD______PR____BG__
+              ______PR__BGWWBGPRBGDD__
+              GG__PG__BG______BR__BR__
+              BR____BRBGBRWWBG____PG__
+              BG__BRBGBRPG____BGPGPR__
+              PR____BRWWBR__WW________
+              BG__DDBR__PGBGPRBRBGDDPR
+              GG________WW________PG__
+              DDBRPG__WWPRBGWWBRWWGG__
+              GG__________________BG__
+    }
+}
+
+
+level = {
+    title = "Rebound"
+    author = "Quentin Crain"
+    image = Soleil_Coronographe.png
+    board = {
+             GG___________________GG
+             _______________________
+             __DD_____SS___SS_______
+             ____SS_________________
+             ___________GG____DD____
+             SS_____DD____SS________
+             _________SS__GG______SS
+             ____DD_______________GG
+             ___________GG____DD__GG
+             _____________________SS
+             ______SS_____________GG
+             GG___________________DD
+    }
+}
+
+
+level = {
+    title = "Easy Maze"
+    author = "Quentin Crain"
+    image = mercurytransit_seibold.png
+    board = {
+             GG____WW__GGWW__________
+             DDWW______WWGG__WWPGWW__
+             PO____WW__BGWW____WWWW__
+             __BO__GGWW____WW____WWGG
+             ____WWWW__WW__PRWW__WWDD
+             GGWW____________WW____BL
+             WW__BOWWWWWW____BL______
+             ____WW____BR____WW__WW__
+             __GGWWBRWW__WW__WW______
+             __WWGGGGWW__WWWWGGWWDDSS
+             __WW__DDWW__WW____WWGGWW
+             ________WW__BR_________
+   }
+}
+
+
+level = {
+    title = "Not So Hard"
+    author = "Quentin Crain"
+    image = swan_gralak.png
+    board = {
+             ________________BO____GG
+             __DD__DD______BO____WW__
+             ____GG______BO____WW____
+             __DD____DDBO____________
+             __GG__GG______WW________
+             ____DD______WW____PR____
+             __________BR____________
+             __GG__GG____BR__________
+             __DD__DD______BR________
+             ____GG__________BR______
+             __DD__DD__________BR____
+             ____SS______________PO__
+    }
+}
+
+
+level = {
+    title  = "Switch-a-roonie"
+    author = "Joshua Gerth"
+    image  = Eris_lombry.png
+    board  = { 
+	        GG__WWDD__DD____SSDD____
+	        GG__WW____________DD____
+	        GG__WW________WW__DD____
+	        ____WWPCGGGGGGDD__DD____
+	        WWBCWWWWWWWWWWWW__WW____
+	        ________________________
+                ________________________
+	        WWBOWWWWWWWWWWWW__WW____
+	        ____WWPOGGGGGGDD__DD____
+	        GG__WW________WW__DD____
+	        GG__WW____________DD____
+	        GG__WWDD__DD____SSDD____
+	}
+}
+
+
+level = {
+    title  = "X Marks The Spot"
+    author = "Joshua Gerth"
+    image  = venice.png
+    board  = { 
+	        GGGGDD____________DDGGGG
+	        GG____DD________DD____GG
+	        GG______DD____DD______GG
+	        WW________DDDD________WW
+	        __DD______WWWW______DD__
+	        ____DD____________DD____
+	        ____DD____________DD____
+                __DD______WWWW______DD__
+                WW________DDDD________WW
+                GG______DD____DD________
+                GG____DD________DD______
+                GGGGDD____________DDGG__
+	}
+}
+
+
+level = {
+    title  = "Just Annoying"
+    author = "Joshua Gerth"
+    image  = city.png
+    board  = { 
+	        ________________PCWWGGGG
+	        __________________WWGGGG
+	        __SSSSSSSSSSSSSSSSWWGGGG
+	        __________________WWGGGG
+	        __________________WWGGGG
+	        WWWWWWWWWWWWWWWW__WWGGGG
+	        __________________WWBCWW
+                __________________WW____
+                __SSSSSSSSSSSSSSSSWW____
+                ________________________
+                ________________________
+		WWSSSSSSSSSSSSSSSSSSWWWW
+	}
+}
+
+
+level = {
+    title  = "Lots of Locks"
+    author = "Joshua Gerth"
+    image  = monte_carlo.png
+    board  = { 
+                BY______WW__WW__WWPCPRPY
+                ________WW__LR__WW______
+                ________WW__WW__KC______
+                WWLYDDWWDD__WW__KR______
+                ____________WW__KY______
+                ____________WW__WW______
+                WWWWWWDDWWWWWW__WW______
+                ________________WW______
+                ________________WW______
+                WWLCDDWWDDWWWWDDWW______
+                ________________________
+                ________________________
+	}
+}
+
+
+level = {
+    title  = "Choose Your Own Adventure"
+    author = "Joshua Gerth"
+    image  = leonid06_heden.png
+    board  = { 
+	        ________________DDWWDD__
+	        __________________WW____
+	        LODDWWWWPG________WW____
+	        ________WWWWDDWW__WW____
+	        ________WW________KO__DD
+	        DDWWDDLRDD________PC__PR
+	        ________WW__WWDDWWKR__KC
+                ________WW________WW__PO
+                LCWWWWWWDD____________WW
+                GGGGGG__WWWWWWWWWWWW____
+                GGGGGG__________________
+                GGGGGG____SSSSSSWWWWWWWW
+	}
+}
+
+
+level = {
+    title  = "Which Way Was Which"
+    author = "Joshua Gerth"
+    image  = ngc6745.png
+    board  = { 
+                GG____DDDDDDSSDDSSDDSSDD
+                GG________DD______DD__DD
+                GG________KC______DD__DD
+                GG________DD______DD__DD
+                GG________DD______PB__DD
+                GG________DDLCDDLBDD__DD
+                GG____DD__DD__PC______WW
+                GG____DD__DD__DD________
+                GG____DD______DD________
+                GG____DD______KB________
+                GG____DD______DD__DD____
+                GG____DDDDSSDDDDSSWW____
+	}
+}
+
+
+level = {
+    title  = "No Can Win"
+    author = "Joshua Gerth"
+    image  = venice.png
+    board  = { 
+                DDDDDDDDDDDDDDDDDDDDDDDD
+                WWWWWWWWGGBLSSWWWWWWWWWW
+                ____WWBBBCBGBOBRBYWW____
+                ____WWPBPCPGPOPRPYWW____
+	 	____WWKBKCKGKOKRKYWW____
+	 	____WWLBLCLGLOLRLYWW____
+                __WWWWWWWWWWWWWWWWWWWW__
+	        ________________________
+                ________________________
+                ________________________
+                ________________________
+                ________________________
+	}
+}
+
+
+level = {
+    title  = "Blank Template"
+    author = "Joshua Gerth"
+    image  = m51.png
+    board  = { 
+	        ________________________
+	        ________________________
+	        ________________________
+	        ________________________
+	        ________________________
+	        ________________________
+	        ________________________
+                ________________________
+                ________________________
+                ________________________
+                ________________________
+                ________________________
+	}
+}

@@ -1,0 +1,56 @@
+This is the readme file for the levels defintion file.  When I get
+comments working in the level file I hope to just put these notes 
+directly into that file.
+
+The structure of the levels.ldf is as follows
+
+# The title is used to identify the Game, a game is 
+#  comprised of a set of levels.  The title paramater
+#  at the top of the file gives the title for the game.
+#
+title = string
+
+# A level definition starts off with the level keyword 
+#  with all details for the level between curly braces
+level = {
+
+# The title this time refers to the title of the level itself
+title = string
+
+# The author refers to the person who designed the level
+author = author
+
+# The image is the background image for the level
+image = string
+
+# The definition for the board starts with the key word
+#  'board' and all row definitions are contained within 
+#  curly braces
+#
+board = {
+
+# Each row is given as a continous string of 24 characters
+#  if not all rows are defined then the bottom missing rows
+#  are assumed blank.
+# The keys for the rows are as follows
+#
+#  __  blank, no bricks
+#  WW  wall, can not break
+#  DD  death, touch and die
+#  GG  gold, can break with any color ball
+#  SS  switch, switches left and right controls
+#  B*  brick, the second character describes the color
+#  P*  paint, the second character describes the color
+#  K*  key, the second character describes the color
+#  L*  lock, the second character describes the color
+#  *B  brown
+#  *C  cobalt
+#  *G  green    
+#  *O  orange
+#  *R  red
+
+# Closing board brace
+}
+
+# Closing level brace
+}

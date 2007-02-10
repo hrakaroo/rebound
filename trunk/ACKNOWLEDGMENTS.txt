@@ -1,0 +1,73 @@
+This game would not have been possible with out the following people/projects.
+They are not listed in any particular order.
+
+SDL* - www.libsdl.org
+----
+SDL truely is a Simple API which makes writing a game like this very easy.
+Thanks to the SDL project I was able to spend the majority of my time
+working on the game itself and very little time trying to figure out cryptic
+drawing functions.  Plus, by having it cross platform enabled me to flip
+back and forth from developing on Linux to developing on Windows with 
+absolutely no change to my actual code.  
+
+Scons - www.scons.org
+-----
+I am not a big fan of Makefiles and even less of a fan of shell scripting.
+Thanks to the power of Scons with Python I was able to very easily create
+a cross platform build enviornment.  
+
+Boost - www.boost.org
+----
+I am looking forward to the day when the Boost libraries are a part of
+STL and not something which needs to be installed externally.  Boost is
+amazing and rock solid.  Every time I learn a new boost library I am amazed
+beyond belief.  Although I was able to understand Spirit enough to write
+my parser I don't think I have begun to even scratch the surface of what
+this library can do.
+
+InkScape - www.inkscape.org
+--------
+A very cool tool which I am just starting to become proficient in.  Inkscape
+was used to draw almost all of my images.
+
+GIMP - www.gimp.org
+----
+An excellent graphics manipulation program which I used to paint the
+inkscape drawing images onto the bricks.  Gimp also helped in touching
+up the background images and taking screen shots of my game for posting.
+
+LGames by Michael Speck - lgames.sourceforge.net
+-----------------------
+In addition to wasting several hours of my time, most of my sounds
+are stolen from the game LBreakout2.  The only exception being the
+laser sound when a ball hits a brick which I stole from OpenOffice.
+LGames also served as inspiration to me when I was considering writing
+Rebound and again as a resource for ideas when I was getting stuck.
+
+OpenOffice - www.openoffice.org 
+---------- 
+As mentioned above, I just stole the laser.wav sound from this project
+mostly because it was installed on my Linux box and the laser sounded
+good.  However, unrelated to Rebound, I have used OpenOffice extensively 
+in the past and love it.
+
+MinGW - www.mingw.org
+-----
+My installing MinGW on my laptop I was able to work on Rebound on the
+go.  A very nice Unix like environment on Windows.
+
+Emacs - www.gnu.org/software/emacs
+-----
+My editor of choice for Unix and Windows.
+
+GCC - gcc.gnu.org
+---
+Free compiler used on both Linux and Windows to compile Rebound.
+
+Level Writers
+-------------
+I am very thankful to the following people for helping to write additional
+levels.
+   Quentin Crain
+   Tobin Zerba
+
