@@ -64,3 +64,4 @@ std::ostream& operator<<(std::ostream& os, const rebound::Ball& ball)
   os << "ball(" << rebound::colorstr[ball.color()] << ")";
   return os;
 }
+
