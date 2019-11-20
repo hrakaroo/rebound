@@ -12,7 +12,7 @@ Amazingly, with a little hacking, I've managed to get it to compile on
 my Ubuntu based Linux system!  Aside from the code changes needed to
 get it to compile, I've left the project mostly unchanged and my
 original README is still available at
-[README.txt](blob/master/README.txt)
+[README.txt](README.txt)
 I've also ported my old web site from sourceforge which you can find
 at
 [https://hrakaroo.github.io/rebound/](https://hrakaroo.github.io/rebound/).
@@ -26,7 +26,7 @@ at all now.  (I may actually clean these up as even the compiler is
 warning me about them, but they will always exist in the git history.)
 
 As a side note, I was really glad to see that
-[SCONS](https://scons.org/) seems to still be going strong.  I was
-really worried when I downloaded the projec that I was going to have
-to rebuild the makefile, but amazingly there was a scons package for
+[SCons](https://scons.org/) seems to still be going strong.  I was
+concerned when I downloaded the project that I was going to have
+to rebuild the Makefile, but amazingly there was a scons package for
 apt that installed and worked perfectly.
