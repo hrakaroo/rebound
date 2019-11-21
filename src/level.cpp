@@ -6,15 +6,15 @@
 #include <sstream>
 
 // Boost
-#include <boost/spirit/core.hpp>
-#include <boost/spirit/iterator/file_iterator.hpp>
-#include <boost/spirit/utility/functor_parser.hpp>
-#include <boost/spirit/actor/assign_actor.hpp>
+#include <boost/spirit/include/classic_core.hpp>
+#include <boost/spirit/include/classic_iterator.hpp>
+#include <boost/spirit/include/classic_utility.hpp>
+#include <boost/spirit/include/classic_actor.hpp>
 
 // Rebound
 #include "exception.hpp"
 
-using namespace boost::spirit;
+using namespace boost::spirit::classic;
 using std::string;
 using std::stringstream;
 
@@ -314,7 +314,7 @@ namespace rebound {
 
     iterator_t end = infile.make_end();
 
-    parse_info<iterator_t> info = boost::spirit::parse(infile, end, lp, space_p);
+    parse_info<iterator_t> info = boost::spirit::classic::parse(infile, end, lp, space_p);
     
     if (!info.full) {
       stringstream sstr;

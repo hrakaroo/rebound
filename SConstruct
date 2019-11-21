@@ -35,7 +35,7 @@ else:
 
 # Our library list is a static list so set it here
 libs  = ['SDLmain', 'SDL', 'SDL_image', 'SDL_ttf', 'SDL_mixer',
-         'boost_signals']
+         'boost_signals', 'boost_system']
 
 # Our cpp flags are also static for now, we may want to add options
 #  for debug later ex.: -O0 -g -pg
