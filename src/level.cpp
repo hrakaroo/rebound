@@ -313,14 +313,24 @@ namespace rebound {
     LevelParser lp(*this);
 
     iterator_t infile(str);
-    if (!infile)
+    if (!infile) {
       throw Exception("Unable to open file: " + str);
+    }
 
     iterator_t end = infile.make_end();
 
     parse_info<iterator_t> info = boost::spirit::classic::parse(infile, end, lp, space_p);
+
+    // The Boost libraries changed something here which is breaking
+    // this Even on a successful parse the value of full is false when
+    // I'm _positive_ this used to be true.  I've spent a while trying
+    // to debug it but debugging in C++ is non-trivial and the best
+    // path forward would probably be to just update to the latest
+    // Boost Spirit library.  So, until then we are going to ignore
+    // the value of full and just use hit.
     
-    if (!info.full) {
+    // if (!info.full) {
+    if (!info.hit) {
       stringstream sstr;
       sstr << "Parsing failed at: " << info.stop;
       throw Exception(sstr.str());
