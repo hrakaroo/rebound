@@ -136,8 +136,9 @@ int main(int argc, char* argv[])
 			       rebound::SCREEN_BPP, 
 			       SDL_SWSURFACE );
     
-    if (!screen)
+    if (!screen) {
       throw rebound::Exception("Could not create SDL scrren");
+    }
   
     // Set some text for the window and when it is an icon
     SDL_WM_SetCaption("Rebound", "Bounding");

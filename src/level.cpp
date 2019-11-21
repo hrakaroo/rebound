@@ -28,16 +28,20 @@ namespace rebound {
   Level::Level() : _row(0)
   {
     // Clear out the board
-    for (int x=0; x<12; ++x)
-      for (int y=0; y<12; ++y)
+    for (int x=0; x<12; ++x) {
+      for (int y=0; y<12; ++y) {
 	_board[x][y] = Brick();
+      }
+    }
   }
   
-
+  
   void
   Level::board(const string& str)
   {
-    if (_row >= 12) return;
+    if (_row >= 12) {
+      return;
+    }
 
     int column = 0;
     for (string::size_type i = 0;

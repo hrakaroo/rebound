@@ -76,13 +76,19 @@ namespace rebound {
 
   MainWindow::~MainWindow()
   {
-    if (_playArea) delete _playArea;
-    if (_scoreArea) delete _scoreArea;
+    if (_playArea) {
+      delete _playArea;
+    }
+    if (_scoreArea) {
+      delete _scoreArea;
+    }
   }
   
   void MainWindow::tick()
   {
-    if (_inInfo or _inPause) return;
+    if (_inInfo or _inPause) {
+      return;
+    }
 
     // Tick our child widgets
     if (_countDown) {
@@ -196,7 +202,9 @@ namespace rebound {
   void
   MainWindow::end()
   {
-    if (_inInfo) return;
+    if (_inInfo) {
+      return;
+    }
     gameOver();
   }
 
@@ -205,7 +213,4 @@ namespace rebound {
   {
     _inPause = !_inPause;
   }
-
-
-
 }

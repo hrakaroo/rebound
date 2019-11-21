@@ -22,8 +22,9 @@ namespace rebound {
 		     const Rect& dest, 
 		     const Rect& source) const
   {
-    if (!image)
+    if (!image) {
       throw Exception("Painter::drawImage: No image to draw");
+    }
 
     // The sdlDest will identify the x and y placement, the
     //  width and height are ignored.
@@ -32,15 +33,17 @@ namespace rebound {
     SDL_Rect updateRect;
     updateRect.x = (Sint16)(sdlDest.x);
     updateRect.y = (Sint16)(sdlDest.y);
-    if (source.width() == 0)
+    if (source.width() == 0) {
       updateRect.w = image->w;
-    else
-      updateRect.w = (Uint16)(source.width()); 
+    } else {
+      updateRect.w = (Uint16)(source.width());
+    }
 
-    if (source.height() == 0)
+    if (source.height() == 0) {
       updateRect.h = image->h;
-    else
+    } else {
       updateRect.h = (Uint16)(source.height());
+    }
 
     if (updateRect.x + updateRect.w > SCREEN_WIDTH) {
       cout << "adjusting" << endl;
@@ -52,8 +55,9 @@ namespace rebound {
       updateRect.h = SCREEN_HEIGHT - updateRect.y;
     }
     
-    if (updateRect.w <= 0 or updateRect.h <= 0)
+    if (updateRect.w <= 0 or updateRect.h <= 0) {
       throw Exception("Image is way off the page");
+    }
 
     _updateRects.add(updateRect);
     

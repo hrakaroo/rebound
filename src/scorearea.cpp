@@ -47,7 +47,9 @@ namespace rebound {
       throw Exception(sstr.str());
     }
 
-    if (!_background) cout << "What!!!" << endl;
+    if (!_background) {
+      cout << "What!!!" << endl;
+    }
 
     _painter.drawImage(_background);
 
@@ -63,7 +65,9 @@ namespace rebound {
   // Destructor
   ScoreArea::~ScoreArea()
   {
-    if (_font) TTF_CloseFont(_font);
+    if (_font) {
+      TTF_CloseFont(_font);
+    }
     _font = 0;
   }
 
@@ -99,10 +103,11 @@ namespace rebound {
       Rect rect(x, SCORE_BALLY - ball.radius(), 2*ball.radius(), 2*ball.radius());
       
       // Should we draw the ball, or the background
-      if (i < _ballCount)
+      if (i < _ballCount) {
 	_painter.drawImage(ballImage, rect);
-      else
+      } else {
 	_painter.drawImage(_background, rect, rect);
+      }
     }
   }
 
@@ -140,8 +145,9 @@ namespace rebound {
 
     SDL_Color color={0,0,0};
     SDL_Surface* text = TTF_RenderText_Blended(_font, author_.c_str(), color);
-    if (!text)
+    if (!text) {
       throw Exception("Error in writing text");
+    }
 
     // Create the target rect
     _authorRect = Rect(AUTHORX - (text->w/2), AUTHORY - (text->h/2), 
@@ -161,13 +167,15 @@ namespace rebound {
   ScoreArea::title(const string& title_)
   {
     // Wipe out the old title if it is not empty
-    if (! _titleRect.empty()) 
+    if (! _titleRect.empty()) {
       _painter.drawImage(_background, _titleRect, _titleRect);
+    }
 
     SDL_Color color={0,0,0};
     SDL_Surface* text = TTF_RenderText_Blended(_font, title_.c_str(), color);
-    if (!text) 
+    if (!text) {
       throw Exception("Error in writing text");
+    }
 
     // Create the target rect
     _titleRect = Rect(TITLEX - (text->w/2), TITLEY - (text->h/2), 
@@ -228,8 +236,9 @@ namespace rebound {
     // Draw the new timer as an image
     SDL_Color color={0,0,0};
     SDL_Surface* text = TTF_RenderText_Blended(_font, sstr.str().c_str(), color);
-    if (!text) 
+    if (!text) {
       throw Exception("Error in writing text");
+    }
 
     // Draw the new timer image on the screen
     _timerRect = Rect(TIMERX - (text->w), TIMERY - (text->h/2),
@@ -258,8 +267,9 @@ namespace rebound {
     // Draw the new score
     SDL_Color color={0,0,0};
     SDL_Surface* text = TTF_RenderText_Blended(_font, sstr.str().c_str(), color);
-    if (!text) 
+    if (!text) {
       throw Exception("Error in writing text");
+    }
 
     // Draw the new score
     _scoreRect = Rect(SCOREX - (text->w), SCOREY - (text->h/2),
@@ -314,8 +324,9 @@ namespace rebound {
       break;
     }
 
-    if (!key)
+    if (!key) {
       throw Exception("ScoreArea: Missing key image");
+    }
 
     // Build a new key rect
     _keyRect = Rect(SCORE_KEYX - (key->w/2), SCORE_KEYY - (key->h/2),

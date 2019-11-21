@@ -42,8 +42,9 @@ namespace rebound {
   {
     // Try to find it first
     SoundMap::const_iterator it = _sounds.find(tag);
-    if (it == _sounds.end()) 
+    if (it == _sounds.end()) {
       throw Exception("Could not find sound: " + tag);
+    }
       
     // Play the sound
     if (Mix_PlayChannel(channel, it->second, 0) == -1) {
