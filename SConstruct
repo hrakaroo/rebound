@@ -44,7 +44,7 @@ ccflags = ['-O3', '-Wall']
 # Get the directory where we should install to
 prefix = ARGUMENTS.get('prefix', '/usr/local')
 
-ccflags += ['-DPREFIX=%s'%prefix]
+ccflags += ['-DPREFIX=%s'%prefix, '-DBOOST_SIGNALS_NO_DEPRECATION_WARNING']
 
 # Fow windows we need to do a little more work.
 #  First, we need to add the ming32 static library for compatibility.
@@ -61,7 +61,7 @@ if ostype == "Windows_NT" :
     # Update the boost library name
     libs = [ (((l == 'boost_signals') and "%s-gcc"%l) or l) for l in libs ]
 
-env = Environment(LIBS      = libs,
+env = Environment(LIBS      = libs,				       
                   LIBPATH   = [sdlLib, boostLib],
                   CPPPATH   = [sdlInclude, boostInclude],
                   CCFLAGS   = ccflags,
@@ -70,7 +70,7 @@ env = Environment(LIBS      = libs,
 
 env.Install("%s/share"%prefix, Dir("images08"))
 
-rebound = SConscript('src/SConscript', build_dir='build', exports='env')
+rebound = SConscript('src/SConscript', variant_dir='build', exports='env')
 
 local = Install(".", rebound)
 

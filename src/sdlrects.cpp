@@ -14,14 +14,17 @@ namespace rebound {
   {
     // We need to use malloc as we may need realloc later
     _rects = (SDL_Rect*)(malloc(sizeof(SDL_Rect)*_maxRects));
-    if (!_rects) 
+    if (!_rects) {
       throw Exception("Could not malloc rects");
+    }
   }
 
   // Destructor
   SDLRects::~SDLRects()
   {
-    if (_rects) free(_rects);
+    if (_rects) {
+      free(_rects);
+    }
   }
 
   void 
@@ -32,9 +35,10 @@ namespace rebound {
       // Double the list space 
       _maxRects *= 2;
       _rects = (SDL_Rect*)(realloc(_rects, sizeof(SDL_Rect)*_maxRects));
-      if (!_rects)
+      if (!_rects) {
 	// This is really bad ... we ran out of memory
 	throw Exception("Could not realloc rects");
+      }
     }
 
     // Stick it on the list

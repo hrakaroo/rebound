@@ -92,9 +92,11 @@ namespace rebound {
     // Remove the old ball (this could be optimized a lot better)
     short bx = _ball.x() / _brickWidth;
     short by = _ball.y() / _brickHeight;
-    for (short i = -1; i <=1; ++i) 
-      for (short j = -1; j <=1; ++j) 
+    for (short i = -1; i <=1; ++i) {
+      for (short j = -1; j <=1; ++j) {
 	updateBrick(bx+i, by+j);
+      }
+    }
 
     // Reset the balls color and remove all keys
     _ball.reset();
@@ -120,15 +122,18 @@ namespace rebound {
     // Remove the old ball (this could be optimized a lot better)
     short bx = _ball.x() / _brickWidth;
     short by = _ball.y() / _brickHeight;
-    for (short i = -1; i <=1; ++i) 
-      for (short j = -1; j <=1; ++j) 
+    for (short i = -1; i <=1; ++i) {
+      for (short j = -1; j <=1; ++j) {
 	updateBrick(bx+i, by+j);
+      }
+    }
     
     moveBall();
     
     // Draw the ball in the new location
-    if (_ballImage)
+    if (_ballImage) {
       _painter.drawImage(_ballImage, _ball.rect());
+    }
   }
   
   
@@ -142,17 +147,21 @@ namespace rebound {
     
     // Now move the ball RIGHT or LEFT, depending on the pending request
     //  Both keys cancel each other out
-    if (_rightRequest) 
-      if (_switchActive)
+    if (_rightRequest) {
+      if (_switchActive){
 	_ball.move(LEFT);
-      else
+      } else {
 	_ball.move(RIGHT);
+      }
+    }
 
-    if (_leftRequest)
-      if (_switchActive)
+    if (_leftRequest) {
+      if (_switchActive) {
 	_ball.move(RIGHT);
-      else
+      } else {
 	_ball.move(LEFT);
+      }
+    }
     
     // Check for a collision with the walls
     if (_ball.direction() == UP) {
@@ -169,12 +178,14 @@ namespace rebound {
     }
     
     // Check if the ball is out of bounds to the left
-    if (_ball.x() - _ball.radius() < 0) 
+    if (_ball.x() - _ball.radius() < 0) {
       _ball.bounce(RIGHT);
+    }
     
     // Check if the ball is out of bounds to the right
-    else if (_ball.x() + _ball.radius() > width()) 
+    else if (_ball.x() + _ball.radius() > width()) {
       _ball.bounce(LEFT);
+    }
     
     // Now we get to checking for brick hits
     // For collision testing we are first going to check the 
@@ -491,8 +502,12 @@ namespace rebound {
   {
     Rect rect(x*_brickWidth, y*_brickHeight, _brickWidth, _brickHeight);
     
-    if (x < 0 || x > 11) return;
-    if (y < 0 || y > 11) return;
+    if (x < 0 || x > 11) {
+      return;
+    }
+    if (y < 0 || y > 11) {
+      return;
+    }
     
     if (_level.brick(x,y).function() == EMPTY) {
       // Copy the background

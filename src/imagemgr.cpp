@@ -68,8 +68,9 @@ namespace rebound {
     // Try to find it first
     ImageMap::const_iterator it = _images.find(tag);
     
-    if (it == _images.end()) 
+    if (it == _images.end()) {
       throw Exception("Could not find image: " + tag);
+    }
 
     return it->second;
   }
