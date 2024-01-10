@@ -15,7 +15,7 @@ original README is still available at
 [README.txt](README.txt)
 I've also ported my old web site from sourceforge which you can find
 at
-[https://hrakaroo.com/rebound/](https://hrakaroo.com/rebound/).
+[https://hrakaroo.com/rebound/](https://www.hrakaroo.com/rebound/).
 
 The only major update I had to do to the project was to update the
 boost spirit library (and turn off the warnings for the boost signal
